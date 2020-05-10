@@ -1,7 +1,7 @@
 # RawInput:    0が始点,1が終点,視線方向不問
 # RawDistance: 0->1の距離/count
 # RawOutput:   召喚Entityは0の視線方向を維持
-# public static Entity drawLine(Entity 0-a-17a7-3-0, Entity 0-a-17a7-3-1, int $count) {}
+# public static Entity drawLine(Entity 0-a-17a7-3-0, Entity 0-a-17a7-3-1, int $count) {
 execute at 0-a-17a7-3-0 facing entity 0-a-17a7-3-1 feet run tp 0-a-17a7-3-0 ~ ~ ~ ~ ~
 execute store result score #pitch Core run data get entity 0-a-17a7-3-0 Rotation[1] 100
 scoreboard players set #temp Core -9000

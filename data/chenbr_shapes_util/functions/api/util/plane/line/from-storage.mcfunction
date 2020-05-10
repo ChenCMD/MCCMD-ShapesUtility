@@ -6,4 +6,4 @@ execute store result entity 0-a-17a7-3-1 Pos[0] double 1 run data get storage ch
 execute store result entity 0-a-17a7-3-1 Pos[1] double 1 run data get storage chenbr:shapes_util Input[4] 1
 execute store result entity 0-a-17a7-3-1 Pos[2] double 1 run data get storage chenbr:shapes_util Input[5] 1
 function chenbr_shapes_util:core/line/draw
-function chenbr_shapes_util:core/master/run_id_sync
+function chenbr_shapes_util:core/master/after_process/line
