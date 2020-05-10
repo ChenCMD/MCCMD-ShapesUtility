@@ -1,4 +1,6 @@
 {
+    "replace": false,
     "values": [
+        "chenbr_shapes_util:core/master/init"
     ]
 }
