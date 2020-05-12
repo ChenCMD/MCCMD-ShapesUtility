@@ -1,0 +1,1 @@
+kill @e[tag=chenbr_shapes_util-output]
