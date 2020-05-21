@@ -4,6 +4,9 @@ execute store result score #particle-pos-X Core run data get entity 0-a-17a7-3-4
 execute store result score #particle-pos-Z Core run data get entity 0-a-17a7-3-4 Pos[2] 100
 scoreboard players operation #particle-pos-X Core *= $radius Input
 scoreboard players operation #particle-pos-Z Core *= $radius Input
+scoreboard players operation #particle-pos-Z Core *= $ellipse-modifier Input
+scoreboard players operation #particle-pos-Z Core /= #100 Core
+execute unless score $ellipse-modifier Input matches 100 run function chenbr_shapes_util:core/master/rotate/around_y
 scoreboard players operation #particle-pos-X Core /= #100 Core
 scoreboard players operation #particle-pos-Z Core /= #100 Core
 scoreboard players operation #particle-pos-X Core += #center-X Core
