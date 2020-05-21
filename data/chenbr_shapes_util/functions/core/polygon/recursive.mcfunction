@@ -5,4 +5,4 @@ function chenbr_shapes_util:core/line/draw
 scoreboard players add #from Core 1
 scoreboard players add #to Core 1
 scoreboard players operation #to Core %= $corner Input
-execute if score #from Core < $corner Input run function chenbr_shapes_util:core/polygons/recursive
+execute if score #from Core < $corner Input run function chenbr_shapes_util:core/polygon/recursive
