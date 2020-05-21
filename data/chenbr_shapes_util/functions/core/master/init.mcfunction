@@ -38,6 +38,8 @@
 #alias entity Entity4 0-a-17a7-3-4
 #alias entity Entity5 0-a-17a7-3-5
 #alias entity Entity6 0-a-17a7-3-6
+#alias entity Entity7 0-a-17a7-3-7
+#alias entity Entity8 0-a-17a7-3-8
 
 #define objective Core 内部計算等で使用される 外部からの参照厳禁
 #define score_holder #particle-distance
@@ -73,3 +75,5 @@ execute unless entity 0-a-17a7-3-3 run summon armor_stand 0.0 0.0 0.0 {Marker:1b
 execute unless entity 0-a-17a7-3-4 run summon armor_stand 0 0 0 {Marker:1b,Invisible:0b,Small:1b,UUIDMost:661415L,UUIDLeast:844424930131972L,Tags:["0-a-17a7-3-4"]}
 execute unless entity 0-a-17a7-3-5 run summon armor_stand 0 0 0 {Marker:1b,Invisible:0b,Small:1b,UUIDMost:661415L,UUIDLeast:844424930131973L,Tags:["0-a-17a7-3-5"]}
 execute unless entity 0-a-17a7-3-6 run summon armor_stand 0 0 0 {Marker:1b,Invisible:0b,Small:1b,UUIDMost:661415L,UUIDLeast:844424930131974L,Tags:["0-a-17a7-3-6"]}
+execute unless entity 0-a-17a7-3-7 run summon armor_stand 0 0 0 {Marker:1b,Invisible:0b,Small:1b,UUIDMost:661415L,UUIDLeast:844424930131975L,Tags:["0-a-17a7-3-7"]}
+execute unless entity 0-a-17a7-3-8 run summon armor_stand 0 0 0 {Marker:1b,Invisible:0b,Small:1b,UUIDMost:661415L,UUIDLeast:844424930131976L,Tags:["0-a-17a7-3-8"]}
