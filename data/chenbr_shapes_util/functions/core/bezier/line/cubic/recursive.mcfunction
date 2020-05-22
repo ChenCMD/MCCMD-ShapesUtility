@@ -1,6 +1,6 @@
-execute as 0-a-17a7-3-0 at @s run function chenbr_shapes_util:core/bezier/line/move/31
-execute as 0-a-17a7-3-5 at @s run function chenbr_shapes_util:core/bezier/line/move/31
-execute as 0-a-17a7-3-6 at @s run function chenbr_shapes_util:core/bezier/line/move/31
+execute as 0-a-17a7-3-0 at @s run function chenbr_shapes_util:core/master/util/move/31
+execute as 0-a-17a7-3-5 at @s run function chenbr_shapes_util:core/master/util/move/31
+execute as 0-a-17a7-3-6 at @s run function chenbr_shapes_util:core/master/util/move/31
 #0->5 = 7
 scoreboard players reset #c-max Core
 execute store result score #from-X Core run data get entity 0-a-17a7-3-0 Pos[0] 1000
@@ -32,7 +32,7 @@ execute as 0-a-17a7-3-7 run scoreboard players operation @s Core *= #10000 Core
 execute as 0-a-17a7-3-7 run scoreboard players operation @s Core /= #c-max Core
 execute as 0-a-17a7-3-7 run scoreboard players operation @s Core /= $count Input
 execute as 0-a-17a7-3-7 run scoreboard players operation @s Core *= #t Core
-execute as 0-a-17a7-3-7 at 0-a-17a7-3-0 facing entity 0-a-17a7-3-5 feet run function chenbr_shapes_util:core/bezier/line/move/31
+execute as 0-a-17a7-3-7 at 0-a-17a7-3-0 facing entity 0-a-17a7-3-5 feet run function chenbr_shapes_util:core/master/util/move/31
 #5->6 = 8
 scoreboard players reset #c-max Core
 execute store result score #from-X Core run data get entity 0-a-17a7-3-5 Pos[0] 1000
@@ -64,7 +64,7 @@ execute as 0-a-17a7-3-8 run scoreboard players operation @s Core *= #10000 Core
 execute as 0-a-17a7-3-8 run scoreboard players operation @s Core /= #c-max Core
 execute as 0-a-17a7-3-8 run scoreboard players operation @s Core /= $count Input
 execute as 0-a-17a7-3-8 run scoreboard players operation @s Core *= #t Core
-execute as 0-a-17a7-3-8 at 0-a-17a7-3-5 facing entity 0-a-17a7-3-6 feet run function chenbr_shapes_util:core/bezier/line/move/31
+execute as 0-a-17a7-3-8 at 0-a-17a7-3-5 facing entity 0-a-17a7-3-6 feet run function chenbr_shapes_util:core/master/util/move/31
 
 #7->8 = 2
 scoreboard players reset #c-max Core
@@ -90,14 +90,14 @@ execute if score #c-Z Core matches ..-1 run scoreboard players operation #c-Z Co
 scoreboard players operation #c-max Core > #c-X Core
 scoreboard players operation #c-max Core > #c-Y Core
 scoreboard players operation #c-max Core > #c-Z Core
-execute as 0-a-17a7-3-2 run scoreboard players operation @s Core > #to-X Core
-execute as 0-a-17a7-3-2 run scoreboard players operation @s Core > #to-Y Core
-execute as 0-a-17a7-3-2 run scoreboard players operation @s Core > #to-Z Core
-execute as 0-a-17a7-3-2 run scoreboard players operation @s Core *= #10000 Core
-execute as 0-a-17a7-3-2 run scoreboard players operation @s Core /= #c-max Core
-execute as 0-a-17a7-3-2 run scoreboard players operation @s Core /= $count Input
-execute as 0-a-17a7-3-2 run scoreboard players operation @s Core *= #t Core
-execute at 0-a-17a7-3-7 facing entity 0-a-17a7-3-8 feet run function chenbr_shapes_util:core/bezier/line/move/31
+scoreboard players operation @s Core > #to-X Core
+scoreboard players operation @s Core > #to-Y Core
+scoreboard players operation @s Core > #to-Z Core
+scoreboard players operation @s Core *= #10000 Core
+scoreboard players operation @s Core /= #c-max Core
+scoreboard players operation @s Core /= $count Input
+scoreboard players operation @s Core *= #t Core
+execute at 0-a-17a7-3-7 facing entity 0-a-17a7-3-8 feet run function chenbr_shapes_util:core/master/util/move/31
 
 summon armor_stand ~ ~ ~ {Marker:1b,Small:1b,Invisible:0b,Tags:[chenbr_shapes_util-output,unfinished]}
 tp @e[tag=chenbr_shapes_util-output,distance=..0.000001] ~ ~ ~ facing entity @s

@@ -1,7 +1,7 @@
 # RawInput:    2が中心,視線方向不問
 # RawDistance: 360/count
 # RawOutput:   召喚Entityは外側への視線方向を持つ
-# public static Entity drawCircle(Entity 0-a-17a7-3-2, int $radius, int $count, int $start) {
+# public static Entity drawCircle(Entity 0-a-17a7-3-2, int $radius, int $count, int $start, int $ellipse-modifier, int $ellipse-rotate) {
 
 execute if score $ellipse-modifier Input matches 0 run scoreboard players set $ellipse-modifier Input 100
 execute unless score $ellipse-modifier Input = $ellipse-modifier Input run scoreboard players set $ellipse-modifier Input 100
@@ -11,7 +11,7 @@ execute unless score $ellipse-modifier Input matches 100 run scoreboard players 
 execute unless score $ellipse-modifier Input matches 100 run scoreboard players operation #particle-distanceC Core %= #3600 Core
 scoreboard players operation #particle-distanceC Core *= #1000 Core
 tellraw @a [{"text":"#particle-distanceC: "},{"score":{"objective":"Core","name":"#particle-distanceC"}}]
-execute as 0-a-17a7-3-3 at @s rotated 0 0 run function chenbr_shapes_util:core/circle/spin/22
+execute as 0-a-17a7-3-3 at @s rotated 0 0 run function chenbr_shapes_util:core/master/util/rotate/22
 
 scoreboard players set #particle-distance Core 3600000
 scoreboard players operation #particle-distance Core /= $count Input

@@ -1,4 +1,4 @@
-function chenbr_shapes_util:core/circle/spin/22
+function chenbr_shapes_util:core/master/util/rotate/22
 tp 0-a-17a7-3-4 ^ ^ ^1
 execute store result score #particle-pos-X Core run data get entity 0-a-17a7-3-4 Pos[0] 100
 execute store result score #particle-pos-Z Core run data get entity 0-a-17a7-3-4 Pos[2] 100
