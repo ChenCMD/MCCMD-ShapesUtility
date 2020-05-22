@@ -20,5 +20,5 @@ execute at 0-a-17a7-3-4 run scoreboard players operation @e[tag=chenbr_shapes_ut
 
 scoreboard players add #summon-count Core 1
 scoreboard players add #tp-count Core 1
-execute if score $count Input > #tp-count Core run scoreboard players operation #particle-distanceC Core = #particle-distance Core
+execute if score $count Input > #tp-count Core run scoreboard players operation @s Core = #particle-distance Core
 execute if score $count Input > #tp-count Core at @s run function chenbr_shapes_util:core/circle/recursive

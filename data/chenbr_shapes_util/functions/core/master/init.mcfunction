@@ -17,6 +17,7 @@
 #define score_holder $start 円の開始角(度数法) 10倍した値を入力すること
 #define score_holder $ellipse-modifier 円/n角形の楕円化に使う cosにかける係数 100%がデフォルト
 #define score_holder $ellipse-rotate 楕円の回転に使う 10倍した値を入力すること $ellipse-modifierが100%の場合無視される
+#define score_holder $vezier-modifier ベジェn角形の補正値 正の値で中心方向に, 負の値で外側に対して10倍したマス分制御点が離れる
 #define score_holder $jump polygonsの何点先と結ぶかの指定
 #define score_holder $corner polygonsをn角形にするかの指定
 #define score_holder $count 全体でいくつの座標を出力するか
@@ -52,6 +53,7 @@ scoreboard objectives add RunID dummy
 scoreboard objectives add Core dummy
 scoreboard players set #-1 Core -1
 scoreboard players set #2 Core 2
+scoreboard players set #10 Core 10
 scoreboard players set #100 Core 100
 scoreboard players set #360 Core 360
 scoreboard players set #1000 Core 1000

@@ -1,7 +1,7 @@
-# RawInput:    0が始点,1が終点,5が制御点 視線方向不問
+# RawInput:    0が始点,1が終点,5,6が制御点 視線方向不問
 # RawDistance: 0->5->6->1の距離/count = tの実進行量 1/count = tの進行量
 # RawOutput:   召喚Entityは0の視線方向を維持
-#public static Entity drawLine(Entity 0-a-17a7-3-0, Entity 0-a-17a7-3-5, Entity 0-a-17a7-3-1, int $count) {
+#public static Entity drawLine(Entity 0-a-17a7-3-0, Entity 0-a-17a7-3-5, Entity 0-a-17a7-3-6, Entity 0-a-17a7-3-1, int $count) {
 #   Location 0 = 0-a-17a7-3-0.getLocation();
 #   Location 5 = 0-a-17a7-3-5.getLocation();
 #   Location 6 = 0-a-17a7-3-6.getLocation();
