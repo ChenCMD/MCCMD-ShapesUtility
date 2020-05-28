@@ -1,7 +1,3 @@
-# RawInput:    0が始点,1が終点,視線方向不問
-# RawDistance: 0->1の距離/count
-# RawOutput:   召喚Entityは0の視線方向を維持
-# public static Entity drawLine(Entity 0-a-17a7-3-0, Entity 0-a-17a7-3-1, int $count) {
 scoreboard players reset #c-max Core
 scoreboard players reset #particle-distance Core
 execute store result score #from-X Core run data get entity 0-a-17a7-3-0 Pos[0] 1000
@@ -31,7 +27,6 @@ scoreboard players operation #particle-distance Core > #to-Y Core
 scoreboard players operation #particle-distance Core > #to-Z Core
 scoreboard players operation #particle-distance Core *= #10000 Core
 scoreboard players operation #particle-distance Core /= #c-max Core
-
 scoreboard players operation #particle-distance Core /= $count Input
 execute as 0-a-17a7-3-0 run scoreboard players set @s Core 0
 execute as 0-a-17a7-3-0 at @s facing entity 0-a-17a7-3-1 feet run tp @s ~ ~ ~ ~ ~

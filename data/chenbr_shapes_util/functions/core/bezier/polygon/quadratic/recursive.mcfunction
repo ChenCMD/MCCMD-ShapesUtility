@@ -1,6 +1,5 @@
 execute as @e[tag=temp] if score @s SummonOrder = #from Core at @s run tp 0-a-17a7-3-0 ~ ~ ~
 execute as @e[tag=temp] if score @s SummonOrder = #to Core at @s run tp 0-a-17a7-3-1 ~ ~ ~
-
 scoreboard players reset #c-max Core
 execute store result score #from-X Core run data get entity 0-a-17a7-3-0 Pos[0] 1000
 execute store result score #from-Y Core run data get entity 0-a-17a7-3-0 Pos[1] 1000
@@ -35,7 +34,6 @@ execute as 0-a-17a7-3-5 run scoreboard players operation @s Core = #modifier-bas
 execute if score #center-dir Core matches -1 as 0-a-17a7-3-5 at @s facing entity 0-a-17a7-3-1 feet rotated ~-90 ~ run function chenbr_shapes_util:core/master/util/move/31
 execute if score #center-dir Core matches 01 as 0-a-17a7-3-5 at @s facing entity 0-a-17a7-3-1 feet rotated ~090 ~ run function chenbr_shapes_util:core/master/util/move/31
 function chenbr_shapes_util:core/bezier/line/quadratic/draw
-
 scoreboard players add #from Core 1
 scoreboard players add #to Core 1
 scoreboard players operation #to Core %= $corner Input

@@ -1,18 +1,3 @@
-# RawInput:    0が始点,1が終点,5が制御点 視線方向不問
-# RawDistance: 0->5->1の距離/count = tの実進行量 1/count = tの進行量
-# RawOutput:   召喚Entityは0の視線方向を維持
-#public static Entity drawLine(Entity 0-a-17a7-3-0, Entity 0-a-17a7-3-5, Entity 0-a-17a7-3-1, int $count) {
-#   Location 0 = 0-a-17a7-3-0.getLocation();
-#   Location 5 = 0-a-17a7-3-5.getLocation();
-#   Location 1 = 0-a-17a7-3-1.getLocation();
-#   double a = 0.getDistance(5) / count;
-#   double b = 5.getDistance(1) / count;
-#   for(int i = 0; i < count; i++) {
-#       double c = 0.getDistance(5) * i;
-#       // 0->5へのDirectionへc分だけ進んだ場所にoutput
-#       0.add(0.getDirection().multipy(a));
-#       5.add(0.getDirection().multipy(b));
-#   }
 
 scoreboard players reset #c-max Core
 scoreboard players reset #distance-a Core
@@ -43,7 +28,6 @@ scoreboard players operation #distance-a Core > #to-Y Core
 scoreboard players operation #distance-a Core > #to-Z Core
 scoreboard players operation #distance-a Core *= #10000 Core
 scoreboard players operation #distance-a Core /= #c-max Core
-
 scoreboard players reset #c-max Core
 scoreboard players reset #distance-b Core
 execute store result score #from-X Core run data get entity 0-a-17a7-3-5 Pos[0] 1000

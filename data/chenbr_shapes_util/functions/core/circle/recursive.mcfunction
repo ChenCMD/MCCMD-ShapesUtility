@@ -17,7 +17,6 @@ execute store result entity 0-a-17a7-3-4 Pos[1] double 0.01 run scoreboard playe
 execute store result entity 0-a-17a7-3-4 Pos[2] double 0.01 run scoreboard players get #particle-pos-Z Core
 execute at 0-a-17a7-3-4 run summon armor_stand ~ ~ ~ {Marker:1b,Small:1b,Invisible:0b,Tags:[chenbr_shapes_util-output,unfinished]}
 execute at 0-a-17a7-3-4 run scoreboard players operation @e[tag=chenbr_shapes_util-output,distance=..0.001] SummonOrder = #summon-count Core
-
 scoreboard players add #summon-count Core 1
 scoreboard players add #tp-count Core 1
 execute if score $count Input > #tp-count Core run scoreboard players operation @s Core = #particle-distance Core

@@ -1,7 +1,3 @@
-# RawInput:    2が中心,視線方向不問
-# RawDistance: {360/corner}/count
-# RawOutput:   召喚Entityは次のEntityの視線方向を持つ
-# public static Entity drawPolygons(Entity 0-a-17a7-3-2, int $radius, int $corner, int $jump, int $count, int $start) {
 scoreboard players operation #tempCount Core = $count Input
 scoreboard players operation $count Input = $corner Input
 function chenbr_shapes_util:core/circle/draw
