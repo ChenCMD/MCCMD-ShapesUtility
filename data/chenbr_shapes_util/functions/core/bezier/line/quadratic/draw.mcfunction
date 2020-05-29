@@ -57,8 +57,8 @@ scoreboard players operation #distance-b Core > #to-Y Core
 scoreboard players operation #distance-b Core > #to-Z Core
 scoreboard players operation #distance-b Core *= #10000 Core
 scoreboard players operation #distance-b Core /= #c-max Core
-execute as 0-a-17a7-3-0 at @s run tp @s ~ ~ ~ facing entity 0-a-17a7-3-5
-execute as 0-a-17a7-3-5 at @s run tp @s ~ ~ ~ facing entity 0-a-17a7-3-1
+execute as 0-a-17a7-3-0 at @s facing entity 0-a-17a7-3-5 feet run tp @s ~ ~ ~ ~ ~
+execute as 0-a-17a7-3-5 at @s facing entity 0-a-17a7-3-1 feet run tp @s ~ ~ ~ ~ ~
 scoreboard players operation #distance-a Core /= $count Input
 scoreboard players operation #distance-b Core /= $count Input
 execute as 0-a-17a7-3-0 run scoreboard players set @s Core 0
