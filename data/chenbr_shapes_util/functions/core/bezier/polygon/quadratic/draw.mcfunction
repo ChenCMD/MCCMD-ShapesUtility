@@ -3,7 +3,7 @@ scoreboard players operation $count Input = $corner Input
 function chenbr_shapes_util:core/circle/draw
 scoreboard players set #summon-count Core 0
 scoreboard players operation $count Input = #tempCount Core
-tag @e[tag=chenbr_shapes_util-unfinished,tag=chenbr_shapes_util-output] add chenbr_shapes_util-temp
+tag @e[type=area_effect_cloud,tag=chenbr_shapes_util-unfinished,tag=chenbr_shapes_util-output] add chenbr_shapes_util-temp
 scoreboard players set #from Core 0
 scoreboard players set #to Core 0
 scoreboard players operation #to Core += $jump Input
@@ -21,4 +21,4 @@ execute if score $vezier-modifier Input matches ..-1 run scoreboard players oper
 execute if score $vezier-modifier Input matches ..-1 run scoreboard players operation #modifier-base Core *= #-1 Core
 execute unless score #center-dir Core matches 0 run function chenbr_shapes_util:core/bezier/polygon/quadratic/recursive
 execute if score #center-dir Core matches 0 run function chenbr_shapes_util:core/polygon/recursive
-kill @e[tag=chenbr_shapes_util-temp]
+kill @e[type=area_effect_cloud,tag=chenbr_shapes_util-temp]

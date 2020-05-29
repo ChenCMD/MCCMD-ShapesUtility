@@ -1,1 +1,1 @@
-kill @e[tag=chenbr_shapes_util-output]
+kill @e[type=area_effect_cloud,tag=chenbr_shapes_util-output]

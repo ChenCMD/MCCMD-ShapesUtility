@@ -28,7 +28,7 @@ scoreboard players operation #particle-distance Core > #to-Z Core
 scoreboard players operation #particle-distance Core *= #10000 Core
 scoreboard players operation #particle-distance Core /= #c-max Core
 scoreboard players operation #particle-distance Core /= $count Input
-execute as 0-a-17a7-3-0 run scoreboard players set @s Core 0
+execute as 0-a-17a7-3-0 run scoreboard players operation @s Core = #particle-distance Core
 execute as 0-a-17a7-3-0 at @s facing entity 0-a-17a7-3-1 feet run tp @s ~ ~ ~ ~ ~
 scoreboard players set #tp-count Core 0
 execute as 0-a-17a7-3-0 at @s run function chenbr_shapes_util:core/line/recursive
