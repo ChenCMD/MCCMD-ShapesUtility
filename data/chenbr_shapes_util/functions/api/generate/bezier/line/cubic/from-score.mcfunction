@@ -10,5 +10,5 @@ execute store result entity 0-a-17a7-3-6 Pos[2] double 0.01 run scoreboard playe
 execute store result entity 0-a-17a7-3-1 Pos[0] double 0.01 run scoreboard players get $to-X Input
 execute store result entity 0-a-17a7-3-1 Pos[1] double 0.01 run scoreboard players get $to-Y Input
 execute store result entity 0-a-17a7-3-1 Pos[2] double 0.01 run scoreboard players get $to-Z Input
-function chenbr_shapes_util:core/line/draw
+function chenbr_shapes_util:core/bezier/line/cubic/draw
 function chenbr_shapes_util:core/master/after_process/line
