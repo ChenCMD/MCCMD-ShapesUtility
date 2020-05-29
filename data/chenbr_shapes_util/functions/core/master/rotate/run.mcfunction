@@ -33,4 +33,4 @@ scoreboard players operation #baseZC Core += #Z Core
 execute store result entity @s Pos[0] double 0.0001 run scoreboard players get #baseXC Core
 execute store result entity @s Pos[1] double 0.0001 run scoreboard players get #baseYC Core
 execute store result entity @s Pos[2] double 0.0001 run scoreboard players get #baseZC Core
-execute if score #rotate-direction Core matches 1 if entity @s[tag=!temp] run function chenbr_shapes_util:core/master/rotate/direction
+execute if score #rotate-direction Core matches 1 if entity @s[tag=!chenbr_shapes_util-temp] run function chenbr_shapes_util:core/master/rotate/direction

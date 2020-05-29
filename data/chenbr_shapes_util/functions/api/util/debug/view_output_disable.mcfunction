@@ -1,0 +1,1 @@
+schedule clear chenbr_shapes_util:api/util/debug/view_output_enable

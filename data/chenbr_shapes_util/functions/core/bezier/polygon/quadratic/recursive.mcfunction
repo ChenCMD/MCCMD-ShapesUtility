@@ -1,5 +1,5 @@
-execute as @e[tag=temp] if score @s SummonOrder = #from Core at @s run tp 0-a-17a7-3-0 ~ ~ ~
-execute as @e[tag=temp] if score @s SummonOrder = #to Core at @s run tp 0-a-17a7-3-1 ~ ~ ~
+execute as @e[tag=chenbr_shapes_util-temp] if score @s SummonOrder = #from Core at @s run tp 0-a-17a7-3-0 ~ ~ ~
+execute as @e[tag=chenbr_shapes_util-temp] if score @s SummonOrder = #to Core at @s run tp 0-a-17a7-3-1 ~ ~ ~
 scoreboard players reset #c-max Core
 execute store result score #from-X Core run data get entity 0-a-17a7-3-0 Pos[0] 1000
 execute store result score #from-Y Core run data get entity 0-a-17a7-3-0 Pos[1] 1000

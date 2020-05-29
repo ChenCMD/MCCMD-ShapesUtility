@@ -94,9 +94,9 @@ scoreboard players operation @s Core /= #c-max Core
 scoreboard players operation @s Core /= $count Input
 scoreboard players operation @s Core *= #t Core
 execute at 0-a-17a7-3-7 facing entity 0-a-17a7-3-8 feet run function chenbr_shapes_util:core/master/util/move/31
-summon armor_stand ~ ~ ~ {Marker:1b,Small:1b,Invisible:0b,Tags:[chenbr_shapes_util-output,unfinished]}
-tp @e[tag=chenbr_shapes_util-output,distance=..0.000001] ~ ~ ~ facing entity @s
-scoreboard players operation @e[tag=chenbr_shapes_util-output,tag=!temp,distance=..0.000001] SummonOrder = #summon-count Core
+summon area_effect_cloud ~ ~ ~ {Age:-2147483648,Duration:-1,WaitTime:-2147483648,Tags:[chenbr_shapes_util-output,chenbr_shapes_util-unfinished]}
+tp @e[limit=1,tag=chenbr_shapes_util-output,tag=!chenbr_shapes_util-temp,distance=..0.0001] ~ ~ ~ facing entity @s
+scoreboard players operation @e[limit=1,tag=chenbr_shapes_util-output,tag=!chenbr_shapes_util-temp,distance=..0.0001] SummonOrder = #summon-count Core
 scoreboard players add #summon-count Core 1
 scoreboard players add #t Core 1
 execute as 0-a-17a7-3-0 run scoreboard players operation @s Core = #distance-a Core
