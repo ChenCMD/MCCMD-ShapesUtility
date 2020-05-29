@@ -1,23 +1,23 @@
 function chenbr_shapes_util:core/master/util/rotate/22
 tp 0-a-17a7-3-4 ^ ^ ^1
-execute store result score #particle-pos-X Core run data get entity 0-a-17a7-3-4 Pos[0] 100
-execute store result score #particle-pos-Z Core run data get entity 0-a-17a7-3-4 Pos[2] 100
-scoreboard players operation #particle-pos-X Core *= $radius Input
-scoreboard players operation #particle-pos-Z Core *= $radius Input
-scoreboard players operation #particle-pos-Z Core *= $ellipse-modifier Input
-scoreboard players operation #particle-pos-Z Core /= #100 Core
-execute unless score $ellipse-modifier Input matches 100 run function chenbr_shapes_util:core/master/rotate/around_y
-scoreboard players operation #particle-pos-X Core /= #100 Core
-scoreboard players operation #particle-pos-Z Core /= #100 Core
-scoreboard players operation #particle-pos-X Core += #center-X Core
-scoreboard players operation #particle-pos-Y Core = #center-Y Core
-scoreboard players operation #particle-pos-Z Core += #center-Z Core
-execute store result entity 0-a-17a7-3-4 Pos[0] double 0.01 run scoreboard players get #particle-pos-X Core
-execute store result entity 0-a-17a7-3-4 Pos[1] double 0.01 run scoreboard players get #particle-pos-Y Core
-execute store result entity 0-a-17a7-3-4 Pos[2] double 0.01 run scoreboard players get #particle-pos-Z Core
+execute store result score #particle-pos-X CB03_Core run data get entity 0-a-17a7-3-4 Pos[0] 100
+execute store result score #particle-pos-Z CB03_Core run data get entity 0-a-17a7-3-4 Pos[2] 100
+scoreboard players operation #particle-pos-X CB03_Core *= $radius CB03_Input
+scoreboard players operation #particle-pos-Z CB03_Core *= $radius CB03_Input
+scoreboard players operation #particle-pos-Z CB03_Core *= $ellipse-modifier CB03_Input
+scoreboard players operation #particle-pos-Z CB03_Core /= #100 CB03_Core
+execute unless score $ellipse-modifier CB03_Input matches 100 run function chenbr_shapes_util:core/master/rotate/around_y
+scoreboard players operation #particle-pos-X CB03_Core /= #100 CB03_Core
+scoreboard players operation #particle-pos-Z CB03_Core /= #100 CB03_Core
+scoreboard players operation #particle-pos-X CB03_Core += #center-X CB03_Core
+scoreboard players operation #particle-pos-Y CB03_Core = #center-Y CB03_Core
+scoreboard players operation #particle-pos-Z CB03_Core += #center-Z CB03_Core
+execute store result entity 0-a-17a7-3-4 Pos[0] double 0.01 run scoreboard players get #particle-pos-X CB03_Core
+execute store result entity 0-a-17a7-3-4 Pos[1] double 0.01 run scoreboard players get #particle-pos-Y CB03_Core
+execute store result entity 0-a-17a7-3-4 Pos[2] double 0.01 run scoreboard players get #particle-pos-Z CB03_Core
 execute at 0-a-17a7-3-4 run summon area_effect_cloud ~ ~ ~ {Age:-2147483648,Duration:-1,WaitTime:-2147483648,Tags:[chenbr_shapes_util-output,chenbr_shapes_util-unfinished]}
-execute at 0-a-17a7-3-4 run scoreboard players operation @e[limit=1,type=area_effect_cloud,tag=chenbr_shapes_util-output,tag=chenbr_shapes_util-unfinished,tag=!chenbr_shapes_util-temp,distance=..0.0001] SummonOrder = #summon-count Core
-scoreboard players add #summon-count Core 1
-scoreboard players add #tp-count Core 1
-execute if score $count Input > #tp-count Core run scoreboard players operation @s Core = #particle-distance Core
-execute if score $count Input > #tp-count Core at @s run function chenbr_shapes_util:core/circle/recursive
+execute at 0-a-17a7-3-4 run scoreboard players operation @e[limit=1,type=area_effect_cloud,tag=chenbr_shapes_util-output,tag=chenbr_shapes_util-unfinished,tag=!chenbr_shapes_util-temp,distance=..0.0001] CB03_SummonOrder = #summon-count CB03_Core
+scoreboard players add #summon-count CB03_Core 1
+scoreboard players add #tp-count CB03_Core 1
+execute if score $count CB03_Input > #tp-count CB03_Core run scoreboard players operation @s CB03_Core = #particle-distance CB03_Core
+execute if score $count CB03_Input > #tp-count CB03_Core at @s run function chenbr_shapes_util:core/circle/recursive

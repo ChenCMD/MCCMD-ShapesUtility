@@ -1,1 +1,1 @@
-execute as @e[type=area_effect_cloud,tag=chenbr_shapes_util-output] if score @s RunID = #LatestRunID RunID run kill @s
+execute as @e[type=area_effect_cloud,tag=chenbr_shapes_util-output] if score @s CB03_RunID = #LatestRunID CB03_RunID run kill @s
