@@ -347,6 +347,7 @@ outputEntityの座標に10tick毎にend_rodのparticleを召喚します。
 
 ---
 <a id="contact"></a>
+### 連絡先
 [Twitter](https://twitter.com/Chen__TS)
 
 ---
