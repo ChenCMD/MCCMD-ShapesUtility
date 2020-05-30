@@ -6,7 +6,8 @@
 入力データ: Entity+Score or Score or Storage+Score  
 出力データ: Entity
 
-1. [使い方](#howTOuse)
+1. [DL](#howToDL)
+1. [使い方](#howToUse)
 	1. [plane.*とrotate.*のfunctionの違い](#plane.or.rotate)
 	1. [線](#line)
 	1. [円/楕円](#circle)
@@ -20,6 +21,12 @@
 1. [使用例](#ex)
 1. [開発者向け情報](#forDev)
 1. [連絡](#contact)
+
+---
+<a id="howToDL"></a>
+### DL方法
+[こちら](https://github.com/ChenCMD/MCCMD-ShapesUtility/releases)からAssets -> ShapesUtility.zip をDLしてください
+
 ---
 <a id="howToUse"></a>
 ## 使い方
