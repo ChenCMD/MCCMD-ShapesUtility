@@ -268,21 +268,21 @@ Storageから入力する際の順番:
 ---
 <a id="util.function"></a>
 ### UtilityFunctionの解説
-* chenbr_shapes_util:api/util/all_delete  
+* `chenbr_shapes_util:api/util/all_delete`  
 全てのoutputEntityをkillします。
-* chenbr_shapes_util:api/util/latest_delete  
+* `chenbr_shapes_util:api/util/latest_delete`  
 最後に実行した回のoutputEntityをkillします。
-* chenbr_shapes_util:api/util/debug/view_output_enable  
+* `chenbr_shapes_util:api/util/debug/view_output_enable`  
 outputEntityの座標に10tick毎にend_rodのparticleを召喚します。
-* chenbr_shapes_util:api/util/debug/view_output_disable  
+* `chenbr_shapes_util:api/util/debug/view_output_disable`  
 上記のparticle召喚を無効にします。
 
 ---
 <a id="warning"></a>
 ## 注意点
-* 不具合が起きる可能性が高いため、chenbr_shapes_util:core/*のfunctionを直接実行しないでください。
-* 下記に使用されている画像は`chenbr_shapes_util:api/util/debug/view_output_enable`を使用して撮影されたものです。  
-本来はarea_effect_cloudの出力のみでparticleは自動で発生しません。
+* 不具合が起きる可能性が高いため、`chenbr_shapes_util:core/*`のfunctionを直接実行しないでください。
+* 上記に使用されている画像は`chenbr_shapes_util:api/util/debug/view_output_enable`を使用して撮影されたものです。  
+本来はarea_effect_cloudの出力のみでparticleは自動で召喚されません。
 
 ---
 <a id="license"></a>
@@ -293,8 +293,9 @@ outputEntityの座標に10tick毎にend_rodのparticleを召喚します。
 
 ---
 <a id="ex"></a>
+### 使用例
+#### 自身の視点先に星型の魔法陣を出力
 ```mcfunction
-#自身の視点先に星型の魔法陣を出力
 #自身を実行元に
     tag @s add chenbr_shapes_util-center
 #出力される点の数を線1本あたり10個に
@@ -330,6 +331,7 @@ outputEntityの座標に10tick毎にend_rodのparticleを召喚します。
 <a id="forDev"></a>
 ### 開発者向けの情報
 * 使用UUID: 8体  
+Most:661415, Least:844424930131968 ~ 844424930131976  
 0-a-17a7-3-0 ~ 0-a-17a7-3-8  
 * 使用scoreboard: 4個  
 `CB03_Input`, `CB03_SummonOrder`, `CB03_RunID`, `CB03_Core`  
