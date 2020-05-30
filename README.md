@@ -25,7 +25,7 @@
 ---
 <a id="howToDL"></a>
 ### DL方法
-[こちら](https://github.com/ChenCMD/MCCMD-ShapesUtility/releases)からAssets -> ShapesUtility.zip をDLしてください
+[こちら](https://github.com/ChenCMD/MCCMD-ShapesUtility/releases/tag/1.0)からAssets -> ShapesUtility.zip をDLしてください
 
 ---
 <a id="howToUse"></a>
