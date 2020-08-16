@@ -1,3 +1,6 @@
+#> chenbr_shapes_util:core/circle/draw
+# @internal
+
 execute if score $ellipse-modifier CB03_Input matches 0 run scoreboard players set $ellipse-modifier CB03_Input 100
 execute unless score $ellipse-modifier CB03_Input = $ellipse-modifier CB03_Input run scoreboard players set $ellipse-modifier CB03_Input 100
 execute as 0-a-17a7-3-3 run scoreboard players operation @s CB03_Core = $start CB03_Input

@@ -1,3 +1,6 @@
+#> chenbr_shapes_util:core/bezier/line/quadratic/draw
+# @internal
+
 
 scoreboard players reset #c-max CB03_Core
 scoreboard players reset #distance-a CB03_Core

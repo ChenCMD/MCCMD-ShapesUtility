@@ -1,3 +1,6 @@
+#> chenbr_shapes_util:core/master/rotate/around_y
+# @internal
+
 execute store result entity 0-a-17a7-3-4 Rotation[0] float -0.1 run scoreboard players get $ellipse-rotate CB03_Input
 execute at 0-a-17a7-3-4 positioned 0.0 0.0 0.0 run tp 0-a-17a7-3-4 ^ ^ ^1
 execute store result score #sin CB03_Core run data get entity 0-a-17a7-3-4 Pos[0] -10000

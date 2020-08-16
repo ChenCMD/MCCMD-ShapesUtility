@@ -1,3 +1,6 @@
+#> chenbr_shapes_util:core/bezier/line/quadratic/recursive
+# @internal
+
 execute as 0-a-17a7-3-0 at @s run function chenbr_shapes_util:core/master/util/move/31
 execute as 0-a-17a7-3-5 at @s run function chenbr_shapes_util:core/master/util/move/31
 scoreboard players reset #c-max CB03_Core

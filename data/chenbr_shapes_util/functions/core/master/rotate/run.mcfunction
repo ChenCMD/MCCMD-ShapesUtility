@@ -1,3 +1,6 @@
+#> chenbr_shapes_util:core/master/rotate/run
+# @internal
+
 execute store result score #vexX CB03_Core run data get entity @s Pos[0] 10000
 execute store result score #vexY CB03_Core run data get entity @s Pos[2] 10000
 scoreboard players operation #vexZ CB03_Core = #distanceC CB03_Core

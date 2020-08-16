@@ -1,3 +1,6 @@
+#> chenbr_shapes_util:core/circle/recursive
+# @internal
+
 function chenbr_shapes_util:core/master/util/rotate/22
 tp 0-a-17a7-3-4 ^ ^ ^1
 execute store result score #particle-pos-X CB03_Core run data get entity 0-a-17a7-3-4 Pos[0] 100

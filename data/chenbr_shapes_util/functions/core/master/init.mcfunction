@@ -1,7 +1,39 @@
-scoreboard objectives add CB03_Input dummy
-scoreboard objectives add CB03_SummonOrder dummy
-scoreboard objectives add CB03_RunID dummy
-scoreboard objectives add CB03_Core dummy
+#> chenbr_shapes_util:core/master/init
+# @internal
+
+#> Input
+# @public from: ShapesUtility
+    #declare storage chenbr:shapes_util
+    scoreboard objectives add CB03_Input dummy
+#> 召喚順スコア
+# @public from: ShapesUtility
+    scoreboard objectives add CB03_SummonOrder dummy
+#> 実行回スコア
+# @public from: ShapesUtility
+    scoreboard objectives add CB03_RunID dummy
+#> 処理用
+# @internal
+    #alias entity 0 0a-17a7-3-0
+    #alias entity 1 0a-17a7-3-1
+    #alias entity 2 0a-17a7-3-2
+    #alias entity 3 0a-17a7-3-3
+    #alias entity 4 0a-17a7-3-4
+    #alias entity 5 0a-17a7-3-5
+    #alias entity 6 0a-17a7-3-6
+    #alias entity 7 0a-17a7-3-7
+    #alias entity 8 0a-17a7-3-8
+    #alias entity 9 0a-17a7-3-9
+    #declare score_holder #-1
+    #declare score_holder #2
+    #declare score_holder #10
+    #declare score_holder #100
+    #declare score_holder #360
+    #declare score_holder #1000
+    #declare score_holder #1024
+    #declare score_holder #3600
+    #declare score_holder #10000
+    scoreboard objectives add CB03_Core dummy
+
 scoreboard players set #-1 CB03_Core -1
 scoreboard players set #2 CB03_Core 2
 scoreboard players set #10 CB03_Core 10

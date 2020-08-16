@@ -1,3 +1,6 @@
+#> chenbr_shapes_util:core/bezier/polygon/quadratic/recursive
+# @internal
+
 execute as @e[tag=chenbr_shapes_util-temp] if score @s CB03_SummonOrder = #from CB03_Core at @s run tp 0-a-17a7-3-0 ~ ~ ~
 execute as @e[tag=chenbr_shapes_util-temp] if score @s CB03_SummonOrder = #to CB03_Core at @s run tp 0-a-17a7-3-1 ~ ~ ~
 scoreboard players reset #c-max CB03_Core

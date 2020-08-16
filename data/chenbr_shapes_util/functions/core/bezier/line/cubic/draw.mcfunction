@@ -1,3 +1,6 @@
+#> chenbr_shapes_util:core/bezier/line/cubic/draw
+# @internal
+
 scoreboard players reset #c-max CB03_Core
 scoreboard players reset #distance-a CB03_Core
 execute store result score #from-X CB03_Core run data get entity 0-a-17a7-3-0 Pos[0] 1000

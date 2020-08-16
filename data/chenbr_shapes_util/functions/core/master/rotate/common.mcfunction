@@ -1,3 +1,6 @@
+#> chenbr_shapes_util:core/master/rotate/common
+# @internal
+
 scoreboard players operation #distanceC CB03_Core = $distance CB03_Input
 scoreboard players operation #distanceC CB03_Core *= #1000 CB03_Core
 execute store result entity 0-a-17a7-3-3 Rotation[0] float -1 run data get entity @s Rotation[0]

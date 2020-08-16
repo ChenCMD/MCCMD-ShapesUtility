@@ -1,3 +1,6 @@
+#> chenbr_shapes_util:core/bezier/polygon/quadratic/draw
+# @internal
+
 scoreboard players operation #tempCount CB03_Core = $count CB03_Input
 scoreboard players operation $count CB03_Input = $corner CB03_Input
 function chenbr_shapes_util:core/circle/draw
