@@ -359,7 +359,7 @@ Most:661415, Least:844424930131968 ~ 844424930131976
 ---
 <a id="contact"></a>
 ### 連絡先
-[Twitter](https://twitter.com/Chen__TS)
+[Twitter](https://twitter.com/Chen__CMD)
 
 ---
 supported: AETHERNOTE
