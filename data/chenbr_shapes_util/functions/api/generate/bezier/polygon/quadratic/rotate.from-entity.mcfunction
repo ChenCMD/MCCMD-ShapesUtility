@@ -3,7 +3,7 @@
 # @input
 #   詳しい説明はREADMEを参照してください。
 
-execute as @e[limit=1,tag=chenbr_shapes_util-center] at @s run function chenbr_shapes_util:core/master/rotate/common
+execute as @e[tag=chenbr_shapes_util-center,limit=1] at @s run function chenbr_shapes_util:core/master/rotate/common
 tp 0-a-17a7-3-2 0.0 0.0 0.0
 function chenbr_shapes_util:core/bezier/polygon/quadratic/draw
 scoreboard players set #rotate-direction CB03_Core 1
